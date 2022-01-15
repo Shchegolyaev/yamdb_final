@@ -51,7 +51,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: atreids/yamdb_final
+          tags: atreids/yamdb_final:latest
 
   deploy:
     runs-on: ubuntu-latest
