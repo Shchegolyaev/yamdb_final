@@ -1,5 +1,5 @@
 asgiref==3.2.10
-Django==2.2.16
+django==2.2.16
 django-filter==2.4.0
 pytest-django==4.5.2
 pytest-pythonpath==0.7.3
