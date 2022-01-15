@@ -9,25 +9,17 @@ from rest_framework.permissions import SAFE_METHODS, AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
+from reviews.models import Category, Genre, Review, Title, User
 
 from .filters import TitleFilter
 from .mixins import ListCreateDestroyAPIView
 from .pagination import CommentsPagination, ReviewPagination
 from .permissions import IsAdmin, IsAdminOrReadOnly, ReviewCommentsPermission
-from .serializers import (
-    CategorySerializer,
-    CommentsSerializers,
-    GenreSerializer,
-    MeSerializer,
-    ReviewSerializers,
-    SingUpSerializer,
-    TitleSerializerGet,
-    TitleSerializerPost,
-    TokenSerializer,
-    UserSerializer,
-)
+from .serializers import (CategorySerializer, CommentsSerializers,
+                          GenreSerializer, MeSerializer, ReviewSerializers,
+                          SingUpSerializer, TitleSerializerGet,
+                          TitleSerializerPost, TokenSerializer, UserSerializer)
 from .utils import sent_verification_code
-from reviews.models import Category, Genre, Review, Title, User
 
 
 class SignUp(APIView):
