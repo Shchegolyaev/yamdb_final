@@ -7,7 +7,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: atreids/api_yamdb:v1.1
+    image: atreids/api_yamdb:v2
     restart: always
     volumes:
       - static_value:/app/static/
